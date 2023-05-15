@@ -1,4 +1,4 @@
-@media only screen and (min-width: 0em) {
+@media only screen and (max-width: 64em) {
   #navigation {
     --primary: #FFBA19;
     --primaryShade: #ffd675;
@@ -242,6 +242,32 @@
     left: 0;
     transition: width .3s, left .3s, top .3s, transform .3s;
   }
+
+  #navigation .hamburger-menu.clicked span {
+    background-color: transparent;
+  }
+  #navigation .hamburger-menu.clicked span:before {
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(225deg);
+    left: 50%;
+    top: 50%;
+  }
+  #navigation .hamburger-menu.clicked span:after {
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(-225deg);
+    left: 50%;
+    top: 50%;
+  }
+
+  #navigation #navbar-menu.open {
+    height: 22.25rem;
+    padding-top: 1.25rem;
+    z-index: -100;
+  }
+  #navigation #navbar-menu.open ul li {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
 }
 
 @media only screen and (min-width: 64em) {
@@ -328,6 +354,8 @@
     justify-content: flex-end;
     align-items: center;
   }
+
+ 
 
   #navigation #navbar-menu ul {
   --primary: #FFBA19;

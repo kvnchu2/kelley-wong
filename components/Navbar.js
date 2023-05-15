@@ -12,7 +12,7 @@ const MENU_LIST = [
   { text: "FAQ", href: '/faq'}
 ];
 const Navbar = () => {
-  const [navActive, setNavActive] = useState(null);
+  const [menuClicked, setMenuClicked] = useState(false);
 
   return (
     <div id="navigation">
@@ -22,7 +22,7 @@ const Navbar = () => {
         
 
         
-        <nav id="navbar-menu" className="">
+        <nav id="navbar-menu" className={ menuClicked ? "open" : ""}>
             <ul>
                 <li><NavItem href="/" text="Home"><a className="active">Home</a></NavItem></li>
                 <li><NavItem href="/about" text="About"><a className="">About</a></NavItem></li>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </ul>
         </nav>
         
-        <button className="hamburger-menu">
+        <button className={ menuClicked ? "hamburger-menu clicked" : "hamburger-menu"} onClick={() => setMenuClicked(!menuClicked)}>
             <span aria-hidden="true"></span>
         </button>
     </div>
