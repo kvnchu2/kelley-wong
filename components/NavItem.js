@@ -6,7 +6,7 @@ const NavItem = ({ text, href, active }) => {
     <>
       <Link href={href}>
         {/* <a className={`nav__link`} >{text}</a> */}
-        <a className={router.pathname === href ? "active" : "nav__link"} >{text}</a>
+        <a className={router.pathname === href ? "active" : ""} >{text}</a>
         
       </Link>
       {/* <div className={router.pathname === href ? "active-underscore" : "inactive-underscore"}></div> */}
