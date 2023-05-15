@@ -24,8 +24,8 @@ main {
     display: block;
     height: 100%;
     width: 100%;
-    background: #ECEFFE;
-    opacity: .3;
+    background: #000;
+    opacity: .7;
     top: 0;
     left: 0;
     z-index: -10;
