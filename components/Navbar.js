@@ -15,97 +15,29 @@ const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
 
   return (
-    <header>
-      <nav className={`nav`}>
-        <div className="nav-div">
-          <Link href={"/"}>
-            <a>
-              <div className="logo">
-                <Image src={Kinwithkevin} alt="kinesiologywithkevin"/>
-              </div>
-            </a>
-          </Link>
-          <div
-            onClick={() => setNavActive(!navActive)}
-            className={`nav__menu-bar`}
-          >
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className="navbar-right">
-            <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-              {/* {MENU_LIST.map((menu, idx) => (
-                <div
-                  onClick={() => {
-                    setActiveIdx(idx);
-                    setNavActive(false);
-                  }}
-                  key={menu.text}
-                >
-                  <NavItem active={activeIdx === idx} {...menu} />
-                </div>
-              ))} */}
-              <div
-                  onClick={() => {
-                    
-                    setNavActive(false);
-                  }}
-                  key="Home"
-                >
-                  <NavItem text="Home" href="/"  />
-              </div>
-              <div
-                  onClick={() => {
-                    
-                    setNavActive(false);
-                  }}
-                  key="About"
-                >
-                  <NavItem text="About Us" href="/about"  />
-              </div>
+    <div id="navigation">
+    <div aria-hidden="true" className="background-color-div">
+    </div>
+    <div className="container">
+        
 
-
-              <div className="dropdown">
-                <button className="dropbtn">Services
-                  <i className="fa fa-caret-down"></i>
-                </button>
-                <div className="dropdown-content">
-                  <Link href="/services/icbcactiverehabilitation"><a href="#">ICBC Active Rehabilitation</a></Link>
-                  <Link href="/services/privatekinesiology"><a href="#">Private Kinesiology</a></Link>
-                  <Link href="/services/onlinetelerehab"><a href="#">Online/Telerehab</a></Link>
-                </div>
-              </div>
-              
-              <div
-                  onClick={() => {
-                    
-                    setNavActive(false);
-                  }}
-                  key="FAQ"
-                >
-                  <NavItem text="FAQ" href="/faq"  />
-              </div>
-
-              <div
-                  onClick={() => {
-                    
-                    setNavActive(false);
-                  }}
-                  key="Contact"
-                >
-                  <NavItem text="Contact" href="/contact"  />
-              </div>
-
-
-            </div>
-
-            
-          </div>
-        </div>
-
-      </nav>
-    </header>
+        
+        <nav id="navbar-menu" className="">
+            <ul>
+                <li><Link href="/"><a className="active">Home</a></Link></li>
+                <li><Link href="/"><a className="">Home</a></Link></li>
+                <li><Link href="/"><a className="">Home</a></Link></li>
+                <li><Link href="/"><a className="">Home</a></Link></li>
+                <li><Link href="/"><a className="">Home</a></Link></li>
+                <li><Link href="/"><a className="">Home</a></Link></li>
+            </ul>
+        </nav>
+        
+        <button className="hamburger-menu">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
   );
 };
 
