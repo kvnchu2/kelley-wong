@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
-import Kinwithkevin from "../public/images/kinesiology-with-kevin-high-resolution-logo-color-on-transparent-background.png";
+import logoLight from "../public/images/logo-light.png";
+import logoBlue from "../public/images/logo-blue.png";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -20,7 +21,16 @@ const Navbar = () => {
     </div>
     <div className="container">
         
-
+        <Link href="/">
+          <a className="logo" aria-label="click to go to home page">
+                <div className="light">
+                  <Image className="light" aria-hidden="true" src={logoLight} decoding="async" alt="logo" width="221" height="66" />
+                </div>
+                <div className="dark">
+                  <Image aria-hidden="true" src={logoBlue} decoding="async" loading="lazy" alt="logo" width="221" height="66" />
+                </div>
+          </a>
+        </Link>
         
         <nav id="navbar-menu" className={ menuClicked ? "open" : ""}>
             <ul>
