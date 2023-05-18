@@ -143,31 +143,6 @@ export default function Home() {
                 <Link href="/services/onlinetelerehab"><h3 className="services-title">Online/Telerehab</h3></Link>
                 <p>Experience professional active rehabilitation services from the comfort of your home. Our Kinesiologist will teach your exercise program remotely over a video platform.</p>
             </div>
-
-            {/* <div className="services-table-item">
-                <div className="personaltraining-image">
-                    <Image src={ElderCare} layout="fill" objectFit="cover"></Image>
-                </div>
-                <h3>Telerehab</h3>
-                <p>A physiotherapy service for those patients and insurers who are having trouble returning to their pre-injury levels of function or post-operative patients who want to return to their pre-operative activity levels.</p>
-            </div>
-
-            <div className="services-table-item">
-                <div className="personaltraining-image">
-                    <Image src={KinesioTaping} layout="fill" objectFit="cover"></Image>
-                </div>
-                <h3>Work Conditioning</h3>
-                <p>A physiotherapy service for those patients and insurers who are having trouble returning to their pre-injury levels of function or post-operative patients who want to return to their pre-operative activity levels.</p>
-            </div>
-
-
-            <div className="services-table-item">
-                <div className="personaltraining-image">
-                    <Image src={Cupping} layout="fill" objectFit="cover"></Image>
-                </div>
-                <h3>Ergonomics</h3>
-                <p>A physiotherapy service for those patients and insurers who are having trouble returning to their pre-injury levels of function or post-operative patients who want to return to their pre-operative activity levels.</p>
-            </div> */}
             
         </div>
     </section>
