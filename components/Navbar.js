@@ -4,10 +4,13 @@ import React, { useState, useEffect } from "react";
 import NavItem from "./NavItem";
 import logoLight from "../public/images/logo-light.png";
 import logoBlue from "../public/images/logo-blue.png";
+import {useRouter} from 'next/router';
 
 const Navbar = () => {
+
   const [menuClicked, setMenuClicked] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
+  const { asPath } = useRouter();
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -18,7 +21,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     window.addEventListener('scroll', changeNavbarColor);
-  });
+  }, [asPath]);
 
   return (
     <div id="navigation">

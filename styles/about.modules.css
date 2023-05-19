@@ -64,7 +64,7 @@
   #int-hero {
     min-height: 15em;
     height: 15em;
-    margin-top: 7.4em;
+    /* margin-top: 7.4em; */
     background-position: center 80%;
     background-attachment: fixed;
     font-size: inherit;
