@@ -47,7 +47,7 @@ main {
   #hero h1 {
     font-weight: bold;
     font-size: 2.8em;
-    color: #000000;
+    color: white;
     line-height: 1.17857143;
     margin-bottom: 0.41071429em;
   }
@@ -55,7 +55,7 @@ main {
     font-size: 0.9em;
     line-height: 1.5;
     margin-bottom: 1.33333333em;
-    color: #595959;
+    color: white;
   }
   #hero .buttons {
     display: flex;
@@ -82,9 +82,10 @@ main {
     display: inline-block;
     width: 1.16666667em;
     height: 1.16666667em;
+    color: white;
   }
   #hero .call-now .dark {
-    display: none;
+    display: block;
   }
   #hero .call-now span {
     display: block;
@@ -94,11 +95,13 @@ main {
     line-height: 1.16666667;
     text-transform: uppercase;
     margin-bottom: 0.5em;
+    color: white
   }
   #hero .call-now .number {
     font-weight: bold;
     line-height: 1.16666667;
     font-size: 1em;
+    color: white;
   }
   #hero .business-casual {
     display: none;
@@ -110,7 +113,7 @@ main {
     padding: 6.15em 0 11.45em 0;
     z-index: 1;
     overflow: hidden;
-    background: url("../public/images/neckstretch.jpg");
+    background: url("../public/images/piano.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
