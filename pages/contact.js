@@ -9,7 +9,7 @@ const Contact = () => {
 
     <section id="form">
         <div className="left-section">
-            <span className="topper">Kinesiology with Kevin</span>
+            <span className="topper">Kelley Wong Piano Studio</span>
             <h2>Send a Message</h2>
             <p>If you have any questions or concerns please feel free to reach out to us.  We respond to every call and email.</p>
             {/* <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true"> */}
@@ -58,15 +58,15 @@ const Contact = () => {
             </div>
             <div className="info-group">
                 <span className="heading">Phone</span>
-                <a className="info" href="tel:236-512-5182">(236) 512-5182</a>
+                <a className="info" href="tel:236-512-5182">(778) 838-6489</a>
             </div>
             <div className="info-group">
                 <span className="heading">Email</span>
-                <a className="info" href="mailto:info@email.com">kvnchu2@gmail.com</a>
+                <a className="info" href="mailto:info@email.com">info@kelleywongmusic.com</a>
             </div>
             <div className="info-group">
                 <span className="heading">Hours</span>
-                <span className="info last">Mon to Sat: 9am to 7pm</span>
+                <span className="info">Mon to Fri: 4:00pm to 9:30pm Sat to Sun: 9:00am to 6:00pm</span>
             </div>
         </div>
     </section>

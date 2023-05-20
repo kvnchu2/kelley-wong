@@ -10,6 +10,7 @@ import Money from '../public/images/money-svgrepo-com.svg';
 import House from '../public/images/house-solid.svg';
 import MusicSolid from '../public/images/music-solid.svg';
 import DesktopSolid from '../public/images/desktop-solid.svg';
+import KelleyWong from '../public/images/kelley-wong.jpg';
 
 
 
@@ -32,7 +33,7 @@ export default function Home() {
                         </div>
                       </Link>
                       
-                      <a className="call-now" href="tel:555-213-9120">
+                      <a className="call-now" href="tel:778-838-6489">
                           {/* <div className="light">
                             <Image decoding="async" src={phone} alt="" aria-hidden="true" width="21" height="21"/>
                           </div> */}
@@ -80,7 +81,34 @@ export default function Home() {
         </div>
     </section>
     
-    
+    <section id="sbsr-579">
+        <div className="cs-container">
+            <picture className="cs-picture">
+                
+                {/* <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
+               
+                <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source> */}
+                <div className="kelley-wong">
+                <Image loading="lazy" decoding="async" src={KelleyWong} alt="room" width="494" height="700"></Image>
+                </div>
+            </picture>
+            <div className="cs-content">
+                <span className="cs-topper">What We Do</span>
+                <h2 className="cs-title">Private Piano and Music Theory Teacher</h2>
+                <p className="cs-text">
+                I am a private piano and music theory teacher in Vancouver with more than 15 years teaching experience and 25 years of playing experience.  I teach piano with enthusiasm, patience, and commitment so we can encourage your child to fully appreciate the beauty of music and sound.
+
+                When teaching, my motivation is seeing students overcome new challenges in learning music, enjoying the music they play, and having fun on the piano.
+
+                </p>
+                <p className="cs-text">
+                Sharing my love for music with students and creating a tailored teaching approach for each of them has led my students to passing their Royal Conservatory of Music exams with honours and distinctions.  The students I work with also excel in auditions, recitals, festivals, and performances.
+
+                </p>
+                <a href="" className="cs-button-solid">Get Free Quote</a>
+            </div>
+        </div>
+    </section>
     </>
   );
 }

@@ -1,247 +1,134 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---   Side By Side Reverse     -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-  #reverse-sbs {
-    padding: var(--sectionPadding);
-    margin-top: 5em;
-    margin-bottom: 5em;
+@media only screen and (min-width: 0rem) {
+  :root {
+    /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
+    --primary: #6ca29b;
+    --primaryLight: #001F3F;
+    --secondary: #FFBA43;
+    --secondaryLight: #FFBA43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4E4B66;
+    --bodyTextColorWhite: #FAFBFC;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1.2rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
-  #reverse-sbs .reverse-cs-container {
+  #sbsr-579 {
+    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+    font-family: 'Roboto', 'Arial', sans-serif;
+  }
+  #sbsr-579 .cs-container {
     width: 100%;
     max-width: 57.2em;
     margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    row-gap: 2.5rem;
-    display: flex;
-    flex-direction: column-reverse;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
   }
-  #reverse-sbs .reverse-cs-left {
-    /* scaling the font size with the view width */
-    font-size: min(2.31vw, .7em);
-    /* using ems so we can use font size to scale the whole section */
-    width: 35em;
-    height: 39.75em;
-    position: relative;
-    margin-left: 2em;
-  }
-  #reverse-sbs .reverse-cs-picture {
-    border-radius: 1.5em;
-    /* clips img tag corners */
-    overflow: hidden;
-    position: absolute;
-    display: block;
-  }
-  #reverse-sbs .reverse-cs-picture .reverse-cs-picture11 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  #sbsr-579 .cs-content {
+    /* set text aling to left if content needs to be left aligned */
+    text-align: left;
     width: 100%;
-    /* makes image act like a background image */
-    object-fit: cover;
+    max-width: 32.625rem;
+    /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
   }
-
-  .reverse-cs-picture11 > span {
-    position: unset !important;
-  }
-
-  .reverse-cs-picture11 > span {
-    object-fit: cover !important;
-  }
-
-  .reverse-cs-picture-image {
-    object-fit: cover;
-  }
-
-  .reverse-cs-picture22 > span {
-    position: unset !important;
-  }
-
-  #reverse-sbs .reverse-cs-picture1 {
-    width: 32.625em;
-    height: 36.3125em;
-    left: 0;
-    top: 0;
-  }
-  #reverse-sbs .reverse-cs-picture2 {
-    width: 25.875em;
-    height: 25em;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
-    right: 0;
-    bottom: 0;
-  }
-  #reverse-sbs .reverse-cs-right {
-    margin: auto;
-    max-width: 22rem;
-   
-  }
-  #reverse-sbs .reverse-cs-topper {
+  #sbsr-579 .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
-    text-align: left;
+    text-align: inherit;
     letter-spacing: .1em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
   }
-  #reverse-sbs .reverse-cs-title {
+  #sbsr-579 .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
-    text-align: left;
-    max-width: 50rem;
-    margin: 0 auto 1rem;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
   }
-  #reverse-sbs .reverse-cs-text {
+  #sbsr-579 .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    text-align: left;
+    text-align: inherit;
     width: 100%;
-    max-width: 46.875rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    max-width: 40.625rem;
+    margin: 0;
     color: var(--bodyTextColor);
   }
-  #reverse-sbs .cs-text:last-of-type {
+  #sbsr-579 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    margin-bottom: 1rem;
+  }
+  #sbsr-579 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #reverse-sbs .cs-flex-group {
-    /* 16px - 32px */
-    padding: clamp(1rem, 3vw, 2rem);
-    background-color: #F7F7F7;
-    border-radius: 1rem;
-    position: relative;
-  }
-  #reverse-sbs .cs-flex-p {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0 0 1rem;
-    color: #767676;
-  }
-  #reverse-sbs .cs-name {
+  #sbsr-579 .cs-button-solid {
     font-size: 1rem;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 0 0.25rem;
-    color: var(--headerColor);
-    display: block;
-  }
-  #reverse-sbs .cs-job {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: #767676;
-    display: block;
-  }
-  #reverse-sbs .cs-quote-icon {
-    /* 60px - 136px */
-    width: clamp(3.75rem, 10vw, 8.5rem);
-    height: auto;
-    position: absolute;
-    bottom: 0rem;
-    /* 16px - 32px */
-    right: clamp(1rem, 4vw, 2rem);
-  }
-  #reverse-sbs .button-solid {
-    margin-top: 2rem;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64em) {
-  #reverse-sbs .reverse-cs-container {
-    flex-flow: row;
-    justify-content: space-between;
-    gap: 3.25rem;
-    display: flex;
-    flex-direction: row;
-  }
-  #reverse-sbs .cs-left {
-    /* font-size: min(1.2vw, 1em); */
-    flex: none;
-  }
-  #reverse-sbs .reverse-cs-right {
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
     margin: 0;
-    max-width: 33.875rem;
-    /* margin-top: 5.5em; */
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reverse-sbs .cs-left:before,
-  body.dark-mode #reverse-sbs .cs-left:after {
-    background: var(--accent);
-  }
-  body.dark-mode #reverse-sbs .cs-picture2 {
-    background-color: var(--dark);
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-  }
-  body.dark-mode #reverse-sbs .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #reverse-sbs .cs-title,
-  body.dark-mode #reverse-sbs .cs-text,
-  body.dark-mode #reverse-sbs .cs-h3,
-  body.dark-mode #reverse-sbs .cs-flex-p,
-  body.dark-mode #reverse-sbs .cs-name {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #reverse-sbs .cs-flex-group {
-    background-color: var(--accent);
-  }
-  body.dark-mode #reverse-sbs .cs-job {
-    color: var(--bodyTextColorWhite);
-    opacity: .8;
-  }
-  body.dark-mode #reverse-sbs .cs-quote-icon {
-    opacity: .2;
-  }
-}
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #cta {
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
     position: relative;
-    padding: 3.125rem 0;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
   }
-  #cta:before {
+  #sbsr-579 .cs-button-solid:before {
     content: '';
     position: absolute;
-    display: block;
     height: 100%;
-    width: 100%;
+    width: 0%;
     background: #000;
-    opacity: .7;
+    opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
+    border-radius: 0.25rem;
+    transition: width .3s;
   }
-  #cta .container {
-    text-align: center;
-  }
-  #cta picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  #sbsr-579 .cs-button-solid:hover:before {
     width: 100%;
-    z-index: -2;
   }
-  #cta picture img {
+  #sbsr-579 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+  }
+  #sbsr-579 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -249,81 +136,50 @@
     width: 100%;
     object-fit: cover;
   }
-  #cta .title {
-    font-weight: 900;
-    font-size: min(9vw, 3rem);
-    line-height: 1.20833333;
-    color: #fff;
+
+  .kelley-wong > span {
+    position: unset !important;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbsr-579 {
+    padding: var(--sectionPadding);
+  }
+  #sbsr-579 .cs-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    /* 60px - 128px */
+    gap: clamp(3.75rem, 10vw, 8rem);
+  }
+  #sbsr-579 .cs-content {
+    width: 53%;
+    /* reset the padding, add the section padding back to the section container */
+    padding: 0;
+  }
+  #sbsr-579 .cs-picture {
+    width: 47vw;
+    max-width: 30.875rem;
+    /* 518px - 700px */
+    height: clamp(32.375rem, 63vw, 43.75rem);
+    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
     position: relative;
-    margin-bottom: 2.25rem;
-    text-align: center;
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
-  #cta p {
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    margin: auto;
-    margin-bottom: 2.25rem;
-    width: 96%;
-    max-width: 37.375rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
-    position: relative;
-    margin-top: 6.25rem;
-  }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
+  #sbsr-579 .cs-picture:before {
+    /* yellow box */
     content: '';
-    position: absolute;
-    display: block;
-    height: 69.25rem;
-    width: 125rem;
-    background: url("../../public/images/cta-squares.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 50%;
+    height: 60%;
+    background: var(--primary);
     opacity: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -3;
-  }
-  #cta .container {
-    width: 90.0625%;
-    margin: auto;
-  }
-  #cta picture {
-    width: 90.0625%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #cta picture:before {
-    content: '';
-    position: absolute;
     display: block;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+    right: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
+                                
