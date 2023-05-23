@@ -269,12 +269,16 @@
     transform: translateY(0) rotateX(0);
   }
 
-  .dark {
-   width: 8rem;
-   height: 8rem;
+  .dark-logo {
+   padding-top: 0.3rem;
   }
 
-  .light {
+  .dark-logo p {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .light-logo {
     display: none;
   }
 
@@ -282,9 +286,10 @@
     display: inline-block;
     height: 1.875rem;
     width: auto;
+    text-decoration: none;
   }
 
-  #navigation .logo .dark img{
+  #navigation .logo .dark-logo img{
     display: inline-block;
     height: 1.875rem;
     width: auto;

@@ -51,16 +51,6 @@ export default function Home() {
       </section>
 
       <section className="services-top">
-        
-        <div className="card">
-            <picture className="picture">
-                <Image src={House} alt="appliance" width="48" height="48" />
-            </picture>
-            <h2>Home Lessons</h2>
-            <p>
-            Teaching in-home lessons pending on location and scheduling
-            </p>
-        </div>
         <div className="card">
             <picture>
                 <Image aria-hidden="true" decoding="async" src={MusicSolid} alt="appliance" width="48" height="48" />

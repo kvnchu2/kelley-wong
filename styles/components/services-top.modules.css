@@ -64,7 +64,7 @@
   .services-top {
     font-size: min(1.8vw, 1em);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     width: 98%;
   }

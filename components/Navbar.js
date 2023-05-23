@@ -31,11 +31,11 @@ const Navbar = () => {
         
         <Link href="/">
           <a className={scrolledNav ? "logo scrolled" : "logo"} aria-label="click to go to home page">
-                <div className="light">
+                <div className="light-logo">
                   {/* <Image className="light" aria-hidden="true" src={logoLight} decoding="async" alt="logo" width="221" height="66" /> */}
                   <p>Kelly Wong | Piano Studio</p>
                 </div>
-                <div className="dark">
+                <div className="dark-logo">
                   {/* <Image aria-hidden="true" src={logoBlue} decoding="async" loading="lazy" alt="logo" width="221" height="66" /> */}
                   <p>Kelley Wong | Piano Studio</p>
                 </div>

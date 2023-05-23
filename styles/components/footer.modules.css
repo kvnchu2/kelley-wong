@@ -185,6 +185,7 @@
     /* pushes all flex children to the top */
     align-items: flex-start;
     justify-content: flex-end;
+    max-width: 57.2em;
   }
   #cs-footer-272 .cs-logo-group {
     /* pushes everything to the right of it as far as possible in a flexbox */
