@@ -23,7 +23,7 @@ export default function Home() {
               <div className="heroText">
                   <h1 id="home-h">Experience the joy of playing the piano</h1>
                   <p>
-                  Whether you're a beginner or seeking to refine your skills, our tailored lessons will empower you to reach new heights
+                  Whether you are a beginner or seeking to refine your skills, my tailored lessons will help you create and experience music in a whole new way
                   </p>
                   <div className="buttons">
                       
@@ -96,7 +96,7 @@ export default function Home() {
                 <span className="cs-topper">What We Do</span>
                 <h2 className="cs-title">Private Piano and Music Theory Teacher</h2>
                 <p className="cs-text">
-                I am a private piano and music theory teacher in Vancouver with more than 15 years teaching experience and 25 years of playing experience.  I teach piano with enthusiasm, patience, and commitment so we can encourage your child to fully appreciate the beauty of music and sound.
+                I am a private piano and music theory teacher in Vancouver with over 20 years of teaching experience and 30 years of playing and performing experience.  I teach piano with enthusiasm, patience, and commitment so we can encourage your child to fully appreciate the beauty of music and sound.
 
                 When teaching, my motivation is seeing students overcome new challenges in learning music, enjoying the music they play, and having fun on the piano.
 

@@ -6,7 +6,7 @@ const About = ({abouts}) => {
   return (
   <>
     <section id="int-hero">
-      <h1 id="home-h">About Us</h1>
+      <h1 id="home-h">About Kelley Wong</h1>
     </section>
     <section id="staff">
       {/* <span className="topper">Our Team</span>
