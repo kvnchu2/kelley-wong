@@ -46,7 +46,15 @@ const Navbar = () => {
               <ul>
                   <li><NavItem href="/" text="Home"><a className="active">Home</a></NavItem></li>
                   <li><NavItem href="/about" text="About"><a className="">About</a></NavItem></li>
-                  <li><NavItem href="/lessons" text="Lessons"><a className="">Lessons</a></NavItem></li>
+                  <div className="dropdown">
+                    <button className={scrolledNav ? "scrolledDropbtn" : "dropbtn"}>Lessons
+                      <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                      <Link href="/lessons/studiolessons"><a href="#">Studio Lessons</a></Link>
+                      <Link href="/lessons/virtuallessons"><a href="#">Virtual Lessons</a></Link>
+                    </div>
+                  </div>
                   <li><NavItem href="/testimonials" text="testimonials"><a className="">Testimonials</a></NavItem></li>
                   <li><NavItem href="/contact" text="contact"><a className="">Contact</a></NavItem></li>
               </ul>

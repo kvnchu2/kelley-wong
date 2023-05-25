@@ -18,6 +18,37 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
   line-height: 1.4em;
+
+  font-weight: bold;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  position: relative;
+  margin-left: 1.875rem;
+  padding-top: 0.1875rem;
+}
+
+.dropdown .scrolledDropbtn {
+  font-size: 18px;    
+  border: none;
+  outline: none;
+  color: black;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  /* font-family: inherit; */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4em;
+
+  font-weight: bold;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  position: relative;
+  margin-left: 1.875rem;
+  padding-top: 0.1875rem;
 }
 
 .dropdown-content {
@@ -28,6 +59,7 @@
   width: 17rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-left: 1.875rem
 }
 
 .dropdown-content a {
