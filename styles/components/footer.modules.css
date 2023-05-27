@@ -31,12 +31,14 @@
   }
   #cs-footer-272 .cs-logo {
     /* 210px - 240px */
-    width: clamp(13.125rem, 8vw, 15rem);
+    /* width: clamp(13.125rem, 8vw, 15rem); */
     height: auto;
     display: block;
     /* 28px - 44px */
     margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
+    text-decoration: none;
   }
+
   #cs-footer-272 .cs-logo-img {
     width: 100%;
     height: auto;
@@ -191,7 +193,7 @@
     /* pushes everything to the right of it as far as possible in a flexbox */
     margin-right: auto;
     width: auto;
-    max-width: 19.0625rem;
+    max-width: 25.0625rem;
   }
   #cs-footer-272 .cs-text {
     width: 100%;

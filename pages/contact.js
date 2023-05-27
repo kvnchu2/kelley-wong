@@ -7,14 +7,15 @@ const Contact = () => {
         <h1 id="home-h">Contact Business</h1>
     </section>
 
+    <section id="contact-intro">
+        <span className="topper">Kelley Wong Piano Studio</span>
+        <h2>Schedule an Interview</h2>
+        <p>Interviews at my studios are completely free of charge. This is an opportunity for me to meet the potential student, hear the student play and test technical skills, and for me to discuss my teaching philosophy, studio policies, and rates. During this interview, I will also outline my initial ideas on building an appropriate program and curriculum if the student were to take lessons with me. Please note that all students under the age of 18 must be accompanied to the interview by a parent or guardian.</p>    
+    </section>
     <section id="form">
         <div className="left-section">
-            <span className="topper">Kelley Wong Piano Studio</span>
-            <h2>Schedule an Interview</h2>
-            <p>Interviews at my studios are completely free of charge. This is an opportunity for me to meet the potential student, hear the student play and test technical skills, and for me to discuss my teaching philosophy, studio policies, and rates. During this interview, I will also outline my initial ideas on building an appropriate program and curriculum if the student were to take lessons with me. Please note that all students under the age of 18 must be accompanied to the interview by a parent or guardian.</p>
             <h2>Send a Message</h2>
             <p>Please feel free to contact me to further discuss how I might be able to assist you or your child in achieving musical goals.</p>
-            {/* <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true"> */}
             <form id="contact" name="Contact Form" method="post" action="https://formspree.io/f/myyagnzn">
                     <div className="input-group">
                         <label htmlFor="name">Full Name</label>

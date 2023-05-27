@@ -13,9 +13,10 @@ import "../styles/components/sidebyside.modules.css";
 import "../styles/components/reversesidebyside.modules.css";
 import "../styles/components/services-top.modules.css";
 import "../styles/components/footer.modules.css";
+import "../styles/components/triplet-sidebyside.modules.css";
+import "../styles/components/reviews-home.modules.css";
 import "../styles/onlinetelerehab/onlinetelerehabcontent.modules.css";
 import "../styles/onlinetelerehab/onlinetelerehab.modules.css";
-import "../styles/reviews-home.modules.css";
 import "../styles/components/services.modules.css";
 import "../styles/faq.modules.css";
 
