@@ -1,9 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import NavItem from "./NavItem";
-import logoLight from "../public/images/logo-light.png";
-import logoBlue from "../public/images/logo-blue.png";
 import {useRouter} from 'next/router';
 
 const Navbar = () => {
@@ -55,7 +52,7 @@ const Navbar = () => {
                       <Link href="/lessons/virtuallessons"><a href="#">Virtual Lessons</a></Link>
                     </div>
                   </div>
-                  <li><NavItem href="/testimonials" text="testimonials"><a className="">Testimonials</a></NavItem></li>
+                  <li><NavItem href="/reviews" text="reviews"><a className="">Reviews</a></NavItem></li>
                   <li><NavItem href="/contact" text="contact"><a className="">Contact</a></NavItem></li>
               </ul>
             </div>

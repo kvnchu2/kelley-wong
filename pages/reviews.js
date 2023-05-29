@@ -4,12 +4,12 @@ import Profile from "../public/images/profile.svg";
 import Stars from "../public/images/stars.svg";
 import ProfileWoman from "../public/images/profile-woman.svg";
 
-export default function Testimonials() {
+export default function Reviews() {
 
   return (
   <>
     <section id="int-hero">
-        <h1 id="home-h">Testimonials</h1>
+        <h1 id="home-h">Reviews</h1>
     </section>
 
     <section id="reviews">

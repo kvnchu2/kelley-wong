@@ -1,0 +1,59 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  .virtual-lessons-reasons {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--sectionPadding);
+  }
+
+  .virtual-lessons-reasons .reasons-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    padding-top: 3rem;
+  }
+
+  .virtual-lessons-button {
+    padding-top: 3rem;
+    align-items: flex-start;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  .virtual-lessons-reasons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .virtual-lessons-reasons .reasons-text {
+    max-width: 65.2em;
+    width: 100%;
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    color: var(--bodyTextColor);
+    padding-left: 5.5rem;
+    padding-top: 3rem;
+  }
+
+  .virtual-lessons-button {
+    padding-top: 3rem;
+    padding-left: 5.5rem;
+  }
+}

@@ -95,11 +95,11 @@
     position: relative;
     background-color: #0e817c;
     box-shadow: none;
-    color: white;
+    color: black;
 
   }
   .dropdown-content a {
-    color: white;
+    color: black;
   }
   .dropdown .dropbtn {
     display: block;

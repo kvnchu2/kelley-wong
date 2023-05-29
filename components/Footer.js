@@ -18,7 +18,7 @@ return (
                   <h2>Kelley Wong | Piano Studio</h2>
               </a>
               <p className="cs-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
+              Whether you are a beginner or seeking to refine your skills, my tailored lessons will help you create and experience music in a whole new way
               </p>
               <div className="cs-social">
                   <a className="cs-social-link" aria-label="visit google profile" href="">
@@ -34,39 +34,43 @@ return (
                   </a>
               </div>
           </div>
-          
+
           <ul className="cs-nav">
               <li className="cs-nav-li">
-                  <span className="cs-header">Sitemap</span>
+                  <span className="cs-header">Main</span>
               </li>
               <li className="cs-nav-li">
                   <a className="cs-nav-link" href="">About</a>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">Services</a>
+                  <a className="cs-nav-link" href="">Virtual Lessons</a>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">Portfolio</a>
+                  <a className="cs-nav-link" href="">Studio Lessons</a>
+              </li>
+              <li className="cs-nav-li">
+                  <a className="cs-nav-link" href="">Reviews</a>
               </li>
               <li className="cs-nav-li">
                   <a className="cs-nav-link" href="">Contact</a>
               </li>
           </ul>
+          
           <ul className="cs-nav">
               <li className="cs-nav-li">
-                  <span className="cs-header">Services</span>
+                  <span className="cs-header">More</span>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">About</a>
+                  <a className="cs-nav-link" href="">News</a>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">Services</a>
+                  <a className="cs-nav-link" href="">Media</a>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">Portfolio</a>
+                  <a className="cs-nav-link" href="">Resource</a>
               </li>
               <li className="cs-nav-li">
-                  <a className="cs-nav-link" href="">Contact</a>
+                  <a className="cs-nav-link" href="">Links</a>
               </li>
           </ul>
           
@@ -76,14 +80,14 @@ return (
               </li>
               <li className="cs-contact-li">
                   <a className="cs-contact-link cs-address" href="">
-                      123 Avenue Street<br></br> Oak Harbor, WA 98101
+                      555 College Street<br></br>Vancouver, BC V5R 3Z6
                   </a>
               </li>
               <li className="cs-contact-li">
-                  <a className="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+                  <a className="cs-contact-link" href="tel: 123-456-7890">(778) 838-6489</a>
               </li>
               <li className="cs-contact-li">
-                  <a className="cs-contact-link" href="mailto:info@codestitch.com">info@codestitch.com</a>
+                  <a className="cs-contact-link" href="mailto:info@codestitch.com">info@kelleywongmusic.com</a>
               </li>
           </ul>
       </div>
