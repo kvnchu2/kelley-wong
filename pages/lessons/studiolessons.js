@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import KelleyWong from "../../public/images/kelley-wong.jpg";
+import KelleyStudio from "../../public/images/kelley-studio.jpg";
 
 
 const StudioLessons = () => {
@@ -9,36 +11,86 @@ const StudioLessons = () => {
       <h1 id="home-h">Studio Lessons</h1>
     </section>
 
-    <section id="reviews-727">
+    <section id="RTsbs-581">
         <div className="cs-container">
+            <picture className="cs-picture">
+                
+                <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
+               
+                <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
+                <div className="triplet-sidebyside">
+                    <Image loading="lazy" decoding="async" src={KelleyStudio} alt="room" width="494" height="700" />
+                </div>
+            </picture>
             <div className="cs-content">
-                <span className="cs-topper">Testimonials</span>
-                <h2 className="cs-title">Trusted by Thousand of People & Companies</h2>
+                <span className="cs-topper">Studio Lessons</span>
+                <h2 className="cs-title">Studio and Terms</h2>
                 <p className="cs-text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    Piano lessons are held in either one of my two studios, and students are welcome to learn in the location closest to them.  My studios are located in Vancouver and Coquitlam, and I also teach in-home lessons pending on location and scheduling.
                 </p>
+                <p className="cs-text">
+                I have three terms set up throughout the year:
+                </p>
+                <ul>
+                    <li>Fall Term - September to January</li>
+                    <li>Spring Term - February to June</li>
+                    <li>Summer Term - July and August (Optional)</li>
+                </ul>
+                <p className="cs-text">
+                Summer and winter breaks are scheduled into the Fall and Summer Terms, each between two to five weeks long.  Students who wish to continue lessons through the breaks for special circumstances are welcome to upon discussion and mutual agreement. 
+                </p>
+                <a href="" className="cs-button-solid">Get Free Quote</a>
             </div>
-            <ul className="cs-card-group">
-                <li className="cs-item">
-                    <Image className="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async" />
-                    <h3 className="cs-h3">Loving the color!</h3>
-                    <p className="cs-item-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                    </p>
-                    <span className="cs-name">Daniel</span>
-                </li>
-                <li className="cs-item">
-                    <Image className="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async" />
-                    <h3 className="cs-h3">Affordable</h3>
-                    <p className="cs-item-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                    </p>
-                    <span className="cs-name">Daniel</span>
-                </li>
-            </ul>
         </div>
     </section>
+                                    
+
+    <section id="RTsbsr-581">
+        <div className="cs-container">
+            <picture className="cs-picture">
+                
+                <source media="(max-width: 600px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
+                
+                <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
+                <div className="triplet-sidebyside">
+                    <Image loading="lazy" decoding="async" src={KelleyWong} alt="room" width="494" height="700" />
+                </div>
+            </picture>
+            <div className="cs-content">
+                <span className="cs-topper">Studio Lessons</span>
+                <h2 className="cs-title">Teaching Methods</h2>
+                <p className="cs-text">
+                I welcome beginner, intermediate, and advanced level students to my studios, and meet potential new students for an initial interview and audition.  I tailor each lesson plan based on the Royal Conservatory of Music and the London College of Music curricula, the goals of the student, and their musical interests.
+                </p>
+                <p className="cs-text">
+                
+                My teaching methods are centred on helping students achieve technical excellence, as well as artistic development.  During lessons, I help students focus on:
+                </p>
+                <ul>
+                    <li>playing with clear musical intonation and intention</li>
+                    <li>learning to control the touch, pressure, and tone of each note</li>
+                    <li>helping students listen to their own music to self-correct errors and recognize areas for improvement</li>
+                    <li>emphasizing sight reading and musicianship</li>
+                    <li>pursuing, challenging, and expanding skills to achieve the next level of technical playing</li>
+                </ul>
+                
+                <p className="cs-text">
+                    As a piano teacher, I aim to help students not only acquire a strong basic foundation for playing proficiently, but to also understand the musical elements and context of every piece they learn.  Above all, I encourage students to appreciate and enjoy the music they play.
+                </p>
+                <p className="cs-text">
+                    New students are currently being accepted.  Contact me to schedule an interview and audition.
+                </p>
+                <a href="" className="cs-button-solid">Get Free Quote</a>
+            </div>
+            
+        </div>
+
+        
+
+        
+    </section>
                                 
+   
   </>
   );
 };

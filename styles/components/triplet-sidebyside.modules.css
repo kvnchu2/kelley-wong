@@ -81,6 +81,36 @@
     /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
     margin-bottom: 1rem;
   }
+  #RTsbsr-581 ul li {
+    --bodyTextColor: #4E4B66;
+    --bodyFontSize: 1.2rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    margin-bottom: 1rem;
+  }
+  #RTsbs-581 ul li {
+    --bodyTextColor: #4E4B66;
+    --bodyFontSize: 1.2rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    margin-bottom: 1rem;
+  }
   #RTsbs-581 .cs-text:last-of-type,
   #RTsbsr-581 .cs-text:last-of-type,
   #RTsbst-581 .cs-text:last-of-type {
