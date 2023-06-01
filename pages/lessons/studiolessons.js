@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import KelleyWong from "../../public/images/kelley-wong.jpg";
 import KelleyStudio from "../../public/images/kelley-studio.jpg";
+import Studio from "../../public/images/studio-lessons.jpg";
 
 
 const StudioLessons = () => {
@@ -53,7 +53,7 @@ const StudioLessons = () => {
                 
                 <source media="(min-width: 601px)" srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg"></source>
                 <div className="triplet-sidebyside">
-                    <Image loading="lazy" decoding="async" src={KelleyWong} alt="room" width="494" height="700" />
+                    <Image loading="lazy" decoding="async" src={Studio} alt="room" width="494" height="700" />
                 </div>
             </picture>
             <div className="cs-content">
